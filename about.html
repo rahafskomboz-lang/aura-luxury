@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | About Our Vision & Maison</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxuryGold: '#C5A880',
+                        luxuryDark: '#0F0F0F',
+                        luxuryBg: '#FAF9F6',
+                    },
+                    fontFamily: {
+                        serifTitle: ['Playfair Display', 'serif'],
+                        sansArabic: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-luxuryBg text-luxuryDark font-sansArabic antialiased selection:bg-luxuryGold selection:text-white">
+
+    <!-- NAVIGATION HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+            <!-- Right: Mobile Hamburger Button -->
+            <div class="flex items-center gap-4">
+                <button id="menu-toggle" aria-label="Toggle Menu"
+                    class="md:hidden p-2 text-luxuryDark hover:text-luxuryGold focus:outline-none transition">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                <span class="hidden sm:inline-block text-xs uppercase tracking-[0.2em] text-gray-400">Haute
+                    Editorial</span>
+            </div>
+
+            <!-- Center: Brand Logo -->
+            <div class="text-center">
+                <a href="index.html" class="font-serifTitle text-3xl font-bold tracking-wider text-luxuryDark">AURA</a>
+                <p class="text-[9px] tracking-[0.4em] uppercase text-luxuryGold -mt-1">Maison de Mode</p>
+            </div>
+
+            <!-- Left: Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-10 space-x-reverse text-sm font-medium tracking-wide">
+                <a href="index.html" class="hover:text-luxuryGold transition">الرئيسية</a>
+                <a href="collections.html" class="hover:text-luxuryGold transition">المجموعات</a>
+                <a href="about.html" class="text-luxuryGold font-semibold border-b border-luxuryGold pb-1">عن المنصة</a>
+            </div>
+
+            <div class="w-7 md:hidden"></div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-b border-gray-100 px-6 py-6 transition-all duration-300">
+            <nav class="flex flex-col space-y-4 text-center font-medium">
+                <a href="index.html" class="py-2 hover:text-luxuryGold border-b border-gray-50 transition">الرئيسية</a>
+                <a href="collections.html"
+                    class="py-2 hover:text-luxuryGold border-b border-gray-50 transition">المجموعات الفاخرة</a>
+                <a href="about.html" class="py-2 text-luxuryGold font-semibold transition">عن المنصة</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- LUXURY HERO BANNER -->
+    <section class="relative bg-luxuryDark text-white py-28 text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-30 bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1600&auto=format&fit=crop');">
+        </div>
+        <div class="relative z-10 max-w-2xl mx-auto">
+            <span class="inline-block text-xs uppercase tracking-[0.5em] text-luxuryGold mb-4">The Philosophy</span>
+            <h1 class="text-4xl md:text-6xl font-serifTitle tracking-wide mb-6">فلسفة الأناقة المطلقة</h1>
+            <p class="text-gray-300 font-light text-base md:text-lg leading-relaxed">
+                حيث يلتقي الذوق الرفيع بأرقى ابتكارات دور الأزياء والعطور العالمية.
+            </p>
+        </div>
+    </section>
+
+    <!-- EDITORIAL STORY SECTION (Corrected RTL Layout) -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Right Side: Text Content -->
+            <div class="space-y-6 text-right">
+                <span class="text-xs uppercase tracking-[0.3em] text-luxuryGold font-semibold">Our Heritage</span>
+                <h2 class="text-3xl md:text-4xl font-serifTitle text-luxuryDark leading-tight">
+                    بوابتكِ الخاصة لاستكشاف عالم الموضة الراقية
+                </h2>
+                <p class="text-gray-600 leading-relaxed font-light text-base md:text-lg">
+                    تأسست منصة <span class="font-semibold text-luxuryDark">AURA</span> لتكون المرجع الأول لكل شغوفة
+                    بالجمال والفخامة. نحن لا نعرض منتجات عادية، بل نقدم دليلاً تحريرياً يجمع أروع القطع العالمية من
+                    الحقائب والعطور النادرة.
+                </p>
+                <p class="text-gray-600 leading-relaxed font-light text-base">
+                    من خلال شراكاتنا مع أشهر المتاجر العالمية، نضمن لكِ الوصول المباشر إلى المصادر الأصلية والمعتمدة،
+                    لتخوضي تجربة تسوق استثنائية تنبض بالرقي والتميز.
+                </p>
+
+                <div class="pt-6 border-t border-gray-200 flex items-center justify-start gap-8">
+                    <div>
+                        <p class="font-serifTitle text-3xl text-luxuryDark font-bold">100%</p>
+                        <p class="text-xs uppercase tracking-widest text-gray-400 mt-1">مصادر أصلية</p>
+                    </div>
+                    <div class="w-[1px] h-12 bg-gray-200"></div>
+                    <div>
+                        <p class="font-serifTitle text-3xl text-luxuryDark font-bold">عالمي</p>
+                        <p class="text-xs uppercase tracking-widest text-gray-400 mt-1">أرقى الماركات</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left Side: High-End Visual Collage (Clean & Organized) -->
+            <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-4">
+                    <div class="aspect-[3/4] bg-gray-100 overflow-hidden shadow-lg rounded-sm">
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=800&auto=format&fit=crop"
+                            alt="Luxury Bag"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-700" />
+                    </div>
+                    <div class="aspect-square bg-gray-100 overflow-hidden shadow-lg rounded-sm">
+                        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=800&auto=format&fit=crop"
+                            alt="Luxury Perfume"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-700" />
+                    </div>
+                </div>
+                <div class="space-y-4 pt-10">
+                    <div class="aspect-square bg-gray-100 overflow-hidden shadow-lg rounded-sm">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop"
+                            alt="Chanel Bag"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-700" />
+                    </div>
+                    <div class="aspect-[3/4] bg-gray-100 overflow-hidden shadow-lg rounded-sm">
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800&auto=format&fit=crop"
+                            alt="Fashion Model"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-700" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-luxuryDark text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="font-serifTitle text-2xl text-white tracking-widest mb-2">AURA</p>
+            <p class="text-xs tracking-widest text-luxuryGold uppercase mb-6">Luxury & High Fashion Aggregator</p>
+            <p class="text-xs text-gray-500 font-light">جميع الحقوق محفوظة &copy; 2026. المجموعات معروضة بالتعاون مع
+                المتاجر الرسمية.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
